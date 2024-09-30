@@ -34,6 +34,7 @@ export const tags: Record<string, TagClass> = {
   cycle: CycleTag,
   'if': IfTag,
   layout: LayoutTag,
+  extends: LayoutTag,
   block: BlockTag,
   raw: RawTag,
   tablerow: TablerowTag,
