@@ -4,11 +4,6 @@
   "description": "A simple, expressive and safe Shopify / Github Pages compatible template engine in pure JavaScript.",
   "main": "dist/liquid.node.js",
   "module": "dist/liquid.node.mjs",
-  "es2015": "dist/liquid.browser.mjs",
-  "browser": {
-    "./dist/liquid.node.js": "./dist/liquid.browser.umd.js",
-    "./dist/liquid.node.mjs": "./dist/liquid.browser.mjs"
-  },
   "types": "dist/index.d.ts",
   "engines": {
     "node": ">=14"
@@ -25,8 +20,6 @@
     "version": "npm run build && npm test",
     "build": "rollup -c rollup.config.mjs",
     "build:cjs": "BUNDLES=cjs rollup -c rollup.config.mjs",
-    "build:min": "BUNDLES=min rollup -c rollup.config.mjs",
-    "build:umd": "BUNDLES=umd rollup -c rollup.config.mjs",
     "build:charmap": "./bin/character-gen.js > src/util/character.ts",
     "build:docs": "bin/build-docs.sh"
   },

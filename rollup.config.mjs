@@ -141,9 +141,7 @@ const browserMin = {
 const bundles = []
 const env = process.env.BUNDLES || ''
 if (env.includes('cjs')) bundles.push(nodeCjs)
-if (env.includes('esm')) bundles.push(nodeEsm, browserEsm)
-if (env.includes('umd')) bundles.push(browserUmd)
-if (env.includes('min')) bundles.push(browserMin)
-if (bundles.length === 0) bundles.push(nodeCjs, nodeEsm, browserEsm, browserUmd, browserMin)
+if (env.includes('esm')) bundles.push(nodeEsm)
+if (bundles.length === 0) bundles.push(nodeCjs, nodeEsm)
 
 export default bundles
