@@ -1,6 +1,6 @@
 {
   "name": "@mvasilkov/liquid",
-  "version": "10.17.0-1",
+  "version": "10.17.0-2",
   "description": "Liquid is a Django-like template engine for Bun and Node.js",
   "main": "dist/liquid.node.js",
   "module": "dist/liquid.node.mjs",
