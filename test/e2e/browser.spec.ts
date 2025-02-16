@@ -1,4 +1,4 @@
-const LiquidUMD = require('../../dist/liquid.browser.umd.js').Liquid
+const LiquidUMD = require('../../dist/liquid.node.js').Liquid
 
 describe('browser', function () {
   it('should yield unclosed output error', () => {

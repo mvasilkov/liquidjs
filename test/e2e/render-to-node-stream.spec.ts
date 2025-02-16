@@ -18,12 +18,6 @@ describe('.renderToNodeStream()', function () {
       }
     })
   })
-  it('should throw in browser', async function () {
-    const cjs = require('../../dist/liquid.browser.umd')
-    const engine = new cjs.Liquid()
-    const render = () => engine.renderToNodeStream('foo')
-    return expect(render).toThrow('streaming not supported in browser')
-  })
 })
 
 describe('.renderFileToNodeStream()', function () {

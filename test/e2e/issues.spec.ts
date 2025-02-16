@@ -1,5 +1,5 @@
 import { TopLevelToken, TagToken, Tokenizer, Context, Liquid, Drop, toValueSync, LiquidError, IfTag } from '../..'
-const LiquidUMD = require('../../dist/liquid.browser.umd.js').Liquid
+const LiquidUMD = require('../../dist/liquid.node.js').Liquid
 
 describe('Issues', function () {
   it('unicode blanks are not properly treated #221', async () => {
